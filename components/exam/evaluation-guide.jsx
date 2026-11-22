@@ -15,8 +15,8 @@ const STEPS = [
     body: "Attempt as much as you want. Everything is saved automatically, so you can stop and come back.",
   },
   {
-    title: "Open “Copy Q&A for Evaluation”",
-    body: "Choose the scope and keep “Prepend strict Evaluator prompt” enabled. This adds examiner instructions, first-N scoring and rubric rows.",
+    title: 'Open "Copy Q&A for Evaluation"',
+    body: "Choose the scope and select a checking strictness — Strict mirrors board exams, Standard is fair, Lenient suits practice. Each mode prepends tailored examiner instructions.",
   },
   {
     title: "Paste into ChatGPT, Gemini or Claude",

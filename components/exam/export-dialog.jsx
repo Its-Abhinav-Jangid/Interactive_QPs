@@ -1,7 +1,14 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import { Check, ClipboardList, Copy, Download, FileText } from "lucide-react";
+import {
+  Check,
+  ClipboardList,
+  Copy,
+  Download,
+  FileText,
+  Info,
+} from "lucide-react";
 import { toast } from "sonner";
 import { EvaluationGuide } from "@/components/exam/evaluation-guide";
 import { Badge } from "@/components/ui/badge";
@@ -23,13 +30,24 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { Switch } from "@/components/ui/switch";
-import { buildQAMarkdown, exportFilename } from "@/lib/export";
+import {
+  buildQAMarkdown,
+  exportFilename,
+  STRICTNESS_MODES,
+} from "@/lib/export";
 import {
   countAttemptedItems,
   getExportScopes,
   questionsForScope,
 } from "@/lib/paper";
 import { copyToClipboard, downloadTextFile, pluralize } from "@/lib/utils";
+
+const STRICTNESS_COLORS = {
+  strict: "text-destructive",
+  standard: "text-primary",
+  lenient: "text-success",
+  none: "text-muted-foreground",
+};
 
 export function ExportDialog({
   paper,
@@ -39,11 +57,13 @@ export function ExportDialog({
   onOpenChange,
 }) {
   const [scope, setScope] = useState("full");
-  const [includePrompt, setIncludePrompt] = useState(true);
+  const [strictnessMode, setStrictnessMode] = useState("standard");
   const [includeUnattempted, setIncludeUnattempted] = useState(false);
   const [copied, setCopied] = useState(false);
 
   const scopes = useMemo(() => getExportScopes(paper), [paper]);
+
+  const selectedMode = STRICTNESS_MODES.find((m) => m.value === strictnessMode);
 
   const attemptedInScope = useMemo(() => {
     return questionsForScope(paper, scope).reduce((total, { question }) => {
@@ -52,7 +72,7 @@ export function ExportDialog({
         countAttemptedItems(
           question,
           responses?.[question.id],
-          activeChoices?.[question.id]
+          activeChoices?.[question.id],
         )
       );
     }, 0);
@@ -65,20 +85,31 @@ export function ExportDialog({
         responses,
         activeChoices,
         scope,
-        includePrompt,
+        strictnessMode,
         includeUnattempted,
       }),
-    [paper, responses, activeChoices, scope, includePrompt, includeUnattempted]
+    [
+      paper,
+      responses,
+      activeChoices,
+      scope,
+      strictnessMode,
+      includeUnattempted,
+    ],
   );
 
   async function handleCopy() {
     const ok = await copyToClipboard(markdown);
     if (ok) {
       setCopied(true);
-      toast.success("Q&A copied. Paste it into your AI tool with the evaluator prompt.");
+      toast.success(
+        "Q&A copied. Paste it into your AI tool with the evaluator prompt.",
+      );
       setTimeout(() => setCopied(false), 2200);
     } else {
-      toast.error("Could not copy. Select the preview text and copy it manually.");
+      toast.error(
+        "Could not copy. Select the preview text and copy it manually.",
+      );
     }
   }
 
@@ -96,8 +127,8 @@ export function ExportDialog({
             Copy Q&A for evaluation
           </DialogTitle>
           <DialogDescription>
-            Export clean Markdown with your active OR choices, then paste it into any AI
-            examiner. No answer key is included.
+            Export clean Markdown with your active OR choices, then paste it
+            into any AI examiner. No answer key is included.
           </DialogDescription>
         </DialogHeader>
 
@@ -121,40 +152,54 @@ export function ExportDialog({
             </p>
           </div>
 
-          <div className="space-y-3 rounded-lg border border-border p-3">
-            <label className="flex cursor-pointer items-start justify-between gap-3">
-              <span>
-                <span className="block text-sm font-medium">Strict evaluator prompt</span>
-                <span className="mt-0.5 block text-xs text-muted-foreground">
-                  First-N scoring, score table and rubric rows.
-                </span>
-              </span>
-              <Switch
-                checked={includePrompt}
-                onCheckedChange={setIncludePrompt}
-                aria-label="Prepend strict evaluator prompt"
-              />
-            </label>
-            <label className="flex cursor-pointer items-start justify-between gap-3">
-              <span>
-                <span className="block text-sm font-medium">Include unattempted questions</span>
-                <span className="mt-0.5 block text-xs text-muted-foreground">
-                  Useful for a full-paper review.
-                </span>
-              </span>
-              <Switch
-                checked={includeUnattempted}
-                onCheckedChange={setIncludeUnattempted}
-                aria-label="Include unattempted questions"
-              />
-            </label>
+          <div className="space-y-2">
+            <Label htmlFor="strictness-mode">Checking strictness</Label>
+            <Select value={strictnessMode} onValueChange={setStrictnessMode}>
+              <SelectTrigger id="strictness-mode">
+                <SelectValue />
+              </SelectTrigger>
+              <SelectContent>
+                {STRICTNESS_MODES.map((mode) => (
+                  <SelectItem key={mode.value} value={mode.value}>
+                    <span className={STRICTNESS_COLORS[mode.value]}>
+                      {mode.label}
+                    </span>
+                  </SelectItem>
+                ))}
+              </SelectContent>
+            </Select>
+            {selectedMode && (
+              <p className="flex items-start gap-1.5 text-xs text-muted-foreground">
+                <Info className="mt-0.5 size-3 shrink-0" />
+                {selectedMode.description}
+              </p>
+            )}
           </div>
+        </div>
+
+        <div className="space-y-3 rounded-lg border border-border p-3">
+          <label className="flex cursor-pointer items-start justify-between gap-3">
+            <span>
+              <span className="block text-sm font-medium">
+                Include unattempted questions
+              </span>
+              <span className="mt-0.5 block text-xs text-muted-foreground">
+                Useful for a full-paper review.
+              </span>
+            </span>
+            <Switch
+              checked={includeUnattempted}
+              onCheckedChange={setIncludeUnattempted}
+              aria-label="Include unattempted questions"
+            />
+          </label>
         </div>
 
         {attemptedInScope === 0 && !includeUnattempted && (
           <div className="rounded-lg border border-warning/40 bg-warning/10 px-3 py-2 text-xs text-warning-foreground dark:text-warning">
-            You have not attempted anything in this scope yet. Turn on “Include
-            unattempted questions” if you want a blank paper to review.
+            You have not attempted anything in this scope yet. Turn on
+            &ldquo;Include unattempted questions&rdquo; if you want a blank
+            paper to review.
           </div>
         )}
 
@@ -181,7 +226,11 @@ export function ExportDialog({
             Download .txt
           </Button>
           <Button onClick={handleCopy}>
-            {copied ? <Check className="size-4" /> : <Copy className="size-4" />}
+            {copied ? (
+              <Check className="size-4" />
+            ) : (
+              <Copy className="size-4" />
+            )}
             {copied ? "Copied" : "Copy to clipboard"}
           </Button>
         </DialogFooter>
