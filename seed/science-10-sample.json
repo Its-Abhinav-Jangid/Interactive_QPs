@@ -1,0 +1,368 @@
+{
+  "title": "CBSE Class 10 Science — Sample Question Paper",
+  "subtitle": "Science (086) · Theory",
+  "subject": "Science",
+  "board": "CBSE",
+  "durationMinutes": 90,
+  "maxMarks": 40,
+  "instructions": [
+    "This paper has four sections: A, B, C and D.",
+    "Section A contains objective and very short answer questions.",
+    "Section B contains case-based questions with data or observation tables.",
+    "Internal choices are provided in Section D. Attempt only one option in each such question.",
+    "Draw diagrams wherever necessary and label them clearly."
+  ],
+  "sections": [
+    {
+      "id": "A",
+      "label": "Section A",
+      "title": "Objective & Very Short Answer",
+      "marks": 10,
+      "questions": [
+        {
+          "id": "q1",
+          "number": "1",
+          "title": "Choose the correct option for each question.",
+          "instruction": "Each question carries 1 mark.",
+          "marks": 5,
+          "layout": "grid",
+          "attemptLimit": null,
+          "exportGroup": null,
+          "stimulus": null,
+          "items": [
+            {
+              "id": "q1a",
+              "type": "mcq",
+              "prompt": "A solution turns red litmus blue. Its pH is most likely",
+              "options": ["1", "4", "7", "10"]
+            },
+            {
+              "id": "q1b",
+              "type": "mcq",
+              "prompt": "The image formed by a plane mirror is",
+              "options": [
+                "real, inverted and magnified",
+                "virtual, erect and of the same size",
+                "real, erect and diminished",
+                "virtual, inverted and diminished"
+              ]
+            },
+            {
+              "id": "q1c",
+              "type": "mcq",
+              "prompt": "Which of the following is a decomposer in a forest ecosystem?",
+              "options": ["Grasshopper", "Fungus", "Snake", "Hawk"]
+            },
+            {
+              "id": "q1d",
+              "type": "mcq",
+              "prompt": "The resistance of a conductor of length L and area of cross-section A is proportional to",
+              "options": ["L/A", "A/L", "L × A", "1/(L × A)"]
+            },
+            {
+              "id": "q1e",
+              "type": "mcq",
+              "prompt": "During photosynthesis, the gas released is",
+              "options": ["carbon dioxide", "nitrogen", "oxygen", "hydrogen"]
+            }
+          ],
+          "choices": null
+        },
+        {
+          "id": "q2",
+          "number": "2",
+          "title": "Study the graph and answer the questions that follow.",
+          "instruction": null,
+          "marks": 5,
+          "layout": "split",
+          "attemptLimit": null,
+          "exportGroup": null,
+          "stimulus": [
+            {
+              "type": "chart",
+              "chartType": "bar",
+              "title": "Average temperature in a city over four weeks",
+              "unit": "°C",
+              "yMax": 45,
+              "categories": ["Week 1", "Week 2", "Week 3", "Week 4"],
+              "series": [
+                { "name": "Maximum", "values": [38, 41, 36, 33] },
+                { "name": "Minimum", "values": [26, 29, 25, 22] }
+              ],
+              "altText": "Grouped bar chart of maximum and minimum temperatures over four weeks. Maximum falls from 38 to 33 degrees Celsius while minimum falls from 26 to 22 degrees Celsius."
+            }
+          ],
+          "items": [
+            {
+              "id": "q2a",
+              "type": "mcq",
+              "prompt": "In which week is the difference between the maximum and minimum temperature the greatest?",
+              "options": ["Week 1", "Week 2", "Week 3", "Week 4"]
+            },
+            {
+              "id": "q2b",
+              "type": "short",
+              "prompt": "Calculate the average maximum temperature over the four weeks."
+            },
+            {
+              "id": "q2c",
+              "type": "short",
+              "prompt": "Suggest one reason why the temperature range might be narrower in a coastal city than in an inland city."
+            }
+          ],
+          "choices": null
+        }
+      ]
+    },
+    {
+      "id": "B",
+      "label": "Section B",
+      "title": "Case-Based Questions",
+      "marks": 10,
+      "questions": [
+        {
+          "id": "q3",
+          "number": "3",
+          "title": "Read the observations and the graph, then answer the questions.",
+          "instruction": null,
+          "marks": 10,
+          "layout": "split",
+          "attemptLimit": null,
+          "exportGroup": null,
+          "stimulus": [
+            {
+              "type": "table",
+              "caption": "Reaction of metals with copper sulphate solution",
+              "headers": ["Test tube", "Metal added", "Colour change observed"],
+              "rows": [
+                ["A", "Zinc", "Blue solution fades; brown deposit appears"],
+                ["B", "Iron", "Blue solution turns pale green"],
+                ["C", "Copper", "No change"],
+                ["D", "Silver", "No change"]
+              ]
+            },
+            {
+              "type": "chart",
+              "chartType": "line",
+              "title": "Temperature of a reaction mixture over time",
+              "unit": "°C",
+              "yMax": 50,
+              "categories": ["0 min", "2 min", "4 min", "6 min", "8 min"],
+              "series": [
+                { "name": "Mixture", "values": [25, 31, 38, 43, 43] }
+              ],
+              "altText": "Line chart showing the temperature of a reaction mixture rising from 25 to 43 degrees Celsius over eight minutes and then levelling off."
+            }
+          ],
+          "items": [
+            {
+              "id": "q3a",
+              "type": "short",
+              "prompt": "Which test tubes show a displacement reaction? Explain your answer using the reactivity series."
+            },
+            {
+              "id": "q3b",
+              "type": "short",
+              "prompt": "Write the balanced chemical equation for the reaction in test tube B and identify the brown deposit formed in test tube A."
+            },
+            {
+              "id": "q3c",
+              "type": "long",
+              "prompt": "Using the graph, describe how the temperature changes during the reaction. Is the reaction exothermic or endothermic? Justify your answer in 40–60 words.",
+              "wordTarget": { "min": 40, "max": 60 }
+            }
+          ],
+          "choices": null
+        }
+      ]
+    },
+    {
+      "id": "C",
+      "label": "Section C",
+      "title": "Short Answer Questions",
+      "marks": 10,
+      "questions": [
+        {
+          "id": "q4",
+          "number": "4",
+          "title": "Study the experiment and the chart, then answer the questions.",
+          "instruction": null,
+          "marks": 5,
+          "layout": "split",
+          "attemptLimit": null,
+          "exportGroup": null,
+          "stimulus": [
+            {
+              "type": "bullets",
+              "heading": "Experiment: electrolysis of water",
+              "items": [
+                "A plastic container is filled with acidified water.",
+                "Two carbon electrodes are connected to a 6 V battery.",
+                "Test tubes are inverted over each electrode to collect the gases.",
+                "The gas collected at the cathode burns with a pop sound."
+              ]
+            },
+            {
+              "type": "chart",
+              "chartType": "pie",
+              "title": "Sources of electricity in a state",
+              "unit": "%",
+              "categories": ["Coal", "Hydro", "Solar", "Wind"],
+              "series": [
+                { "name": "Share", "values": [55, 20, 15, 10] }
+              ],
+              "altText": "Pie chart of electricity sources: coal 55 percent, hydro 20 percent, solar 15 percent and wind 10 percent."
+            }
+          ],
+          "items": [
+            {
+              "id": "q4a",
+              "type": "short",
+              "prompt": "Name the gases collected at the cathode and the anode during the electrolysis of water, and state the ratio of their volumes."
+            },
+            {
+              "id": "q4b",
+              "type": "short",
+              "prompt": "Using the pie chart, explain one environmental advantage and one limitation of the state's current electricity mix."
+            }
+          ],
+          "choices": null
+        },
+        {
+          "id": "q5",
+          "number": "5",
+          "title": "Read the SWOT analysis and answer the questions.",
+          "instruction": null,
+          "marks": 5,
+          "layout": "stack",
+          "attemptLimit": null,
+          "exportGroup": null,
+          "stimulus": [
+            {
+              "type": "swot",
+              "title": "Adoption of rooftop solar power in a city",
+              "strengths": [
+                "Reduces electricity bills for households",
+                "Uses abundant sunlight",
+                "Creates local installation jobs"
+              ],
+              "weaknesses": [
+                "High initial installation cost",
+                "Output depends on weather"
+              ],
+              "opportunities": [
+                "Government subsidies and low-interest loans",
+                "Falling prices of solar panels"
+              ],
+              "threats": [
+                "Poor maintenance and dust accumulation",
+                "Grid instability during peak generation"
+              ]
+            }
+          ],
+          "items": [
+            {
+              "id": "q5a",
+              "type": "short",
+              "prompt": "Using the SWOT analysis, suggest two practical steps a city could take to increase rooftop solar adoption."
+            },
+            {
+              "id": "q5b",
+              "type": "short",
+              "prompt": "Explain why solar energy is considered a renewable source while coal is not."
+            }
+          ],
+          "choices": null
+        }
+      ]
+    },
+    {
+      "id": "D",
+      "label": "Section D",
+      "title": "Long Answer Questions",
+      "marks": 10,
+      "questions": [
+        {
+          "id": "q6",
+          "number": "6",
+          "title": "Attempt any one of the following.",
+          "instruction": "Answer in 80–100 words.",
+          "marks": 5,
+          "layout": "stack",
+          "attemptLimit": null,
+          "exportGroup": null,
+          "stimulus": null,
+          "items": null,
+          "choices": [
+            {
+              "key": "A",
+              "label": "Light",
+              "stimulus": null,
+              "items": [
+                {
+                  "id": "q6a",
+                  "type": "long",
+                  "prompt": "Describe an activity to show that light travels in a straight line. Explain, with a diagram, how a shadow is formed by an opaque object.",
+                  "wordTarget": { "min": 80, "max": 100 }
+                }
+              ]
+            },
+            {
+              "key": "B",
+              "label": "Human eye",
+              "stimulus": null,
+              "items": [
+                {
+                  "id": "q6b",
+                  "type": "long",
+                  "prompt": "Explain the role of the iris and the pupil in regulating the amount of light entering the eye. What happens to the pupil in bright light?",
+                  "wordTarget": { "min": 80, "max": 100 }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "number": "7",
+          "title": "Attempt any one of the following.",
+          "instruction": "Answer in 80–100 words.",
+          "marks": 5,
+          "layout": "stack",
+          "attemptLimit": null,
+          "exportGroup": null,
+          "stimulus": null,
+          "items": null,
+          "choices": [
+            {
+              "key": "A",
+              "label": "Life processes",
+              "stimulus": null,
+              "items": [
+                {
+                  "id": "q7a",
+                  "type": "long",
+                  "prompt": "Explain how the small intestine is adapted for the absorption of digested food. Mention any two structural features.",
+                  "wordTarget": { "min": 80, "max": 100 }
+                }
+              ]
+            },
+            {
+              "key": "B",
+              "label": "Reproduction",
+              "stimulus": null,
+              "items": [
+                {
+                  "id": "q7b",
+                  "type": "long",
+                  "prompt": "Distinguish between asexual and sexual reproduction with one example of each. State one advantage of sexual reproduction.",
+                  "wordTarget": { "min": 80, "max": 100 }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

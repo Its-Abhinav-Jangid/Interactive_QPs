@@ -1,0 +1,533 @@
+{
+  "title": "CBSE Class 10 English — Sample Question Paper",
+  "subtitle": "Language & Literature (184)",
+  "subject": "English",
+  "board": "CBSE",
+  "durationMinutes": 180,
+  "maxMarks": 80,
+  "instructions": [
+    "The paper has four sections: Reading Skills, Grammar, Writing Skills and Literature.",
+    "All questions are compulsory unless an internal choice or an attempt limit is stated.",
+    "Attempt the questions in the order of the sections if you wish; the timer is common to the whole paper.",
+    "Write your answers in the space provided. Word limits, where given, should be respected."
+  ],
+  "sections": [
+    {
+      "id": "A",
+      "label": "Section A",
+      "title": "Reading Skills",
+      "marks": 20,
+      "questions": [
+        {
+          "id": "q1",
+          "number": "1",
+          "title": "Read the following passage carefully and answer the questions that follow.",
+          "instruction": "Attempt all questions. Each question carries the marks indicated.",
+          "marks": 10,
+          "layout": "split",
+          "attemptLimit": null,
+          "exportGroup": null,
+          "stimulus": [
+            {
+              "type": "passage",
+              "heading": "1. Read the passage:",
+              "paragraphs": [
+                "We live in an age that rewards speed. Messages are answered in seconds, headlines are skimmed in a glance, and a video that runs longer than a minute is often abandoned. Reading, too, has been pulled into this current. We race through articles to reach the end, collect facts, and move on. Yet something important is lost when we treat every page as a race track.",
+                "Slow reading is not the same as reading slowly. It is a deliberate choice to stay with a sentence, to hear its rhythm, and to ask what it is really saying. A deliberate reader pauses at an unfamiliar word, re-reads a paragraph that surprised them, and lets an idea settle before reaching for the next one. The page does not become a destination; it becomes a place to linger.",
+                "The benefits are cumulative. A deliberate reader notices the small turns in an argument, the images a writer has chosen, and the assumptions that sit beneath a confident sentence. This kind of attention builds vocabulary, sharpens memory and, perhaps most importantly, develops empathy. When we give a character our full attention, we practise giving other people the same courtesy.",
+                "None of this requires a quiet library or an empty afternoon. Ten unhurried minutes with a poem, a news report or a single page of a novel can be enough. The habit grows in small, repeated doses. In a culture that keeps telling us to hurry, choosing to linger is a quiet act of independence."
+              ],
+              "footnote": "Adapted for practice."
+            }
+          ],
+          "items": [
+            {
+              "id": "q1a",
+              "type": "mcq",
+              "prompt": "The writer's primary purpose in the passage is to",
+              "options": [
+                "criticise the use of digital devices by young people",
+                "argue for deliberate, attentive reading",
+                "describe the routines of a personal library",
+                "compare printed books with online articles"
+              ]
+            },
+            {
+              "id": "q1b",
+              "type": "short",
+              "prompt": "Complete the sentence appropriately.",
+              "quote": "The writer believes that slow reading helps us…",
+              "stemPrefix": "The writer believes that slow reading helps us",
+              "stemSuffix": "."
+            },
+            {
+              "id": "q1c",
+              "type": "short",
+              "prompt": "State any two benefits of deliberate reading mentioned in the passage."
+            },
+            {
+              "id": "q1d",
+              "type": "short",
+              "prompt": "Find a word in paragraph 3 that means 'careful and unhurried'."
+            },
+            {
+              "id": "q1e",
+              "type": "short",
+              "prompt": "Do you agree with the writer's view that choosing to linger is 'a quiet act of independence'? Give one reason of your own."
+            }
+          ],
+          "choices": null
+        },
+        {
+          "id": "q2",
+          "number": "2",
+          "title": "Read the extract given below and answer the questions that follow.",
+          "instruction": null,
+          "marks": 10,
+          "layout": "split",
+          "attemptLimit": null,
+          "exportGroup": null,
+          "stimulus": [
+            {
+              "type": "extract",
+              "heading": "2. Read the extract:",
+              "source": "— Anonymous",
+              "text": "The river does not argue with the stone;\nit takes the shape of what it cannot move,\nand in that yielding finds a way to reach\nthe sea it has been dreaming of since spring.\n\nWe call it patient. Patient is a word\nfor those who have no choice. The river\nis not patient; it is certain. Certainty\nis what remains when anger runs dry."
+            }
+          ],
+          "items": [
+            {
+              "id": "q2a",
+              "type": "mcq",
+              "prompt": "The tone of the extract is best described as",
+              "options": ["bitter and accusing", "calm and reflective", "anxious and uncertain", "playful and ironic"]
+            },
+            {
+              "id": "q2b",
+              "type": "short",
+              "prompt": "Explain the image of the river taking 'the shape of what it cannot move'."
+            },
+            {
+              "id": "q2c",
+              "type": "short",
+              "prompt": "Why does the speaker reject the word 'patient' for the river?"
+            },
+            {
+              "id": "q2d",
+              "type": "short",
+              "prompt": "Identify and explain one poetic device used in the extract."
+            }
+          ],
+          "choices": null
+        }
+      ]
+    },
+    {
+      "id": "B",
+      "label": "Section B",
+      "title": "Grammar",
+      "marks": 10,
+      "questions": [
+        {
+          "id": "q3",
+          "number": "3",
+          "title": "Complete the tasks that follow.",
+          "instruction": "Attempt any 10 of the 12 tasks. Only the first 10 attempted tasks will be graded by the examiner.",
+          "marks": 10,
+          "layout": "stack",
+          "attemptLimit": 10,
+          "exportGroup": "Grammar Only (Q3)",
+          "stimulus": null,
+          "items": [
+            {
+              "id": "q3a",
+              "type": "mcq",
+              "prompt": "Choose the correct option to complete the sentence: The committee ___ not reached a decision yet.",
+              "options": ["has", "have", "is", "were"]
+            },
+            {
+              "id": "q3b",
+              "type": "mcq",
+              "prompt": "Choose the correct option: She has been living in Delhi ___ 2019.",
+              "options": ["for", "from", "since", "by"]
+            },
+            {
+              "id": "q3c",
+              "type": "mcq",
+              "prompt": "Choose the correct option: Neither the teacher nor the students ___ present at the assembly.",
+              "options": ["was", "were", "has", "is"]
+            },
+            {
+              "id": "q3d",
+              "type": "mcq",
+              "prompt": "Choose the correct reported form: He said, \"I will finish the project tomorrow.\"",
+              "options": [
+                "He said that he will finish the project tomorrow.",
+                "He said that he would finish the project the next day.",
+                "He said that he would finish the project tomorrow.",
+                "He says that he will finish the project the next day."
+              ]
+            },
+            {
+              "id": "q3e",
+              "type": "mcq",
+              "prompt": "Choose the correct option: By the time the guests arrived, the meal ___.",
+              "options": ["was prepared", "has been prepared", "had been prepared", "is prepared"]
+            },
+            {
+              "id": "q3f",
+              "type": "mcq",
+              "prompt": "Choose the correct option: There is very ___ information available on this topic.",
+              "options": ["few", "little", "many", "fewer"]
+            },
+            {
+              "id": "q3g",
+              "type": "short",
+              "prompt": "Complete the sentence with the correct form of the verb in brackets.",
+              "stemPrefix": "The train",
+              "stemSuffix": "(leave) before we reached the station."
+            },
+            {
+              "id": "q3h",
+              "type": "short",
+              "prompt": "Complete the sentence with the correct form of the verb in brackets.",
+              "stemPrefix": "If I",
+              "stemSuffix": "(know) about the traffic, I would have left earlier."
+            },
+            {
+              "id": "q3i",
+              "type": "short",
+              "prompt": "Rewrite the sentence using the correct degree of comparison: This is the more interesting book I have read this year.",
+              "quote": "This is the more interesting book I have read this year."
+            },
+            {
+              "id": "q3j",
+              "type": "short",
+              "prompt": "Rewrite the sentence in the passive voice: The chef prepared a delicious meal.",
+              "quote": "The chef prepared a delicious meal."
+            },
+            {
+              "id": "q3k",
+              "type": "error_correction",
+              "prompt": "Identify the error in the sentence and write the correction.",
+              "quote": "Each of the students have submitted the assignment."
+            },
+            {
+              "id": "q3l",
+              "type": "error_correction",
+              "prompt": "Identify the error in the sentence and write the correction.",
+              "quote": "The teacher asked the students to return back their answer sheets."
+            }
+          ],
+          "choices": null
+        }
+      ]
+    },
+    {
+      "id": "C",
+      "label": "Section C",
+      "title": "Writing Skills",
+      "marks": 10,
+      "questions": [
+        {
+          "id": "q4",
+          "number": "4",
+          "title": "Attempt any one of the following.",
+          "instruction": "Write in 100–120 words. Follow the format of a formal letter.",
+          "marks": 5,
+          "layout": "stack",
+          "attemptLimit": null,
+          "exportGroup": "Writing Only (Q4–Q5)",
+          "stimulus": null,
+          "items": null,
+          "choices": [
+            {
+              "key": "A",
+              "label": "Letter to the editor",
+              "stimulus": null,
+              "items": [
+                {
+                  "id": "q4a",
+                  "type": "long",
+                  "prompt": "You are Rohan / Riya Mehta of 14, Green Park, New Delhi. The footpath outside your school has been broken for months, forcing students to walk on the road. Write a letter to the Editor of a national daily drawing the authorities' attention to the problem and suggesting a solution.",
+                  "wordTarget": { "min": 100, "max": 120 }
+                }
+              ]
+            },
+            {
+              "key": "B",
+              "label": "Letter to the principal",
+              "stimulus": null,
+              "items": [
+                {
+                  "id": "q4b",
+                  "type": "long",
+                  "prompt": "You are Rohan / Riya Mehta, a student of Class X. Your school library has very few books on current affairs. Write a letter to the Principal requesting an expansion of the library's current-affairs section and explaining why it matters to students.",
+                  "wordTarget": { "min": 100, "max": 120 }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "number": "5",
+          "title": "Attempt any one of the following.",
+          "instruction": "Write in 120–150 words.",
+          "marks": 5,
+          "layout": "stack",
+          "attemptLimit": null,
+          "exportGroup": "Writing Only (Q4–Q5)",
+          "stimulus": null,
+          "items": null,
+          "choices": [
+            {
+              "key": "A",
+              "label": "Article",
+              "stimulus": null,
+              "items": [
+                {
+                  "id": "q5a",
+                  "type": "long",
+                  "prompt": "Write an article for your school magazine on the topic 'The Joy of Reading in a Distracted World'. You are Aarav / Aanya Kapoor of Class X, Green Valley School.",
+                  "wordTarget": { "min": 120, "max": 150 }
+                }
+              ]
+            },
+            {
+              "key": "B",
+              "label": "Speech",
+              "stimulus": null,
+              "items": [
+                {
+                  "id": "q5b",
+                  "type": "long",
+                  "prompt": "Write a speech to be delivered in the morning assembly on the topic 'A Digital Detox Is Not a Punishment'. You are Aarav / Aanya Kapoor of Class X, Green Valley School.",
+                  "wordTarget": { "min": 120, "max": 150 }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "D",
+      "label": "Section D",
+      "title": "Literature",
+      "marks": 40,
+      "questions": [
+        {
+          "id": "q6",
+          "number": "6",
+          "title": "Read the extract and answer the questions that follow.",
+          "instruction": null,
+          "marks": 5,
+          "layout": "split",
+          "attemptLimit": null,
+          "exportGroup": null,
+          "stimulus": [
+            {
+              "type": "extract",
+              "heading": "Extract",
+              "source": "— From a classroom anthology",
+              "text": "The house remembered every birthday,\nevery chair that had been pushed back,\nevery voice that had learned to say goodbye.\nIt kept them all, and waited, and was kind."
+            }
+          ],
+          "items": [
+            {
+              "id": "q6a",
+              "type": "mcq",
+              "prompt": "The repetition of the word 'every' in the extract mainly suggests",
+              "options": [
+                "the house's growing emptiness",
+                "the richness and continuity of memory",
+                "the speaker's impatience with the past",
+                "the house's indifference to people"
+              ]
+            },
+            {
+              "id": "q6b",
+              "type": "short",
+              "prompt": "What does the personification of the house reveal about the speaker's feelings towards it?"
+            },
+            {
+              "id": "q6c",
+              "type": "short",
+              "prompt": "Explain the significance of the phrase 'learned to say goodbye'."
+            }
+          ],
+          "choices": null
+        },
+        {
+          "id": "q7",
+          "number": "7",
+          "title": "Answer the following questions in 40–50 words each.",
+          "instruction": null,
+          "marks": 6,
+          "layout": "stack",
+          "attemptLimit": null,
+          "exportGroup": null,
+          "stimulus": null,
+          "items": [
+            {
+              "id": "q7a",
+              "type": "short",
+              "prompt": "How does the writer's description of the postmaster's act of charity change the way the villagers see him?"
+            },
+            {
+              "id": "q7b",
+              "type": "short",
+              "prompt": "What does Mandela mean when he says that freedom is 'indivisible'?"
+            }
+          ],
+          "choices": null
+        },
+        {
+          "id": "q8",
+          "number": "8",
+          "title": "Answer the following questions in 40–50 words each.",
+          "instruction": null,
+          "marks": 6,
+          "layout": "stack",
+          "attemptLimit": null,
+          "exportGroup": null,
+          "stimulus": null,
+          "items": [
+            {
+              "id": "q8a",
+              "type": "short",
+              "prompt": "Why does the poet use the image of a ball to talk about loss in 'The Ball Poem'?"
+            },
+            {
+              "id": "q8b",
+              "type": "short",
+              "prompt": "How does Anne's diary help her cope with the confinement of the annexe?"
+            }
+          ],
+          "choices": null
+        },
+        {
+          "id": "q9",
+          "number": "9",
+          "title": "Attempt any one of the following in 120–150 words.",
+          "instruction": null,
+          "marks": 10,
+          "layout": "stack",
+          "attemptLimit": null,
+          "exportGroup": null,
+          "stimulus": null,
+          "items": null,
+          "choices": [
+            {
+              "key": "A",
+              "label": "Character study",
+              "stimulus": null,
+              "items": [
+                {
+                  "id": "q9a",
+                  "type": "long",
+                  "prompt": "Lencho's faith is both admirable and naive. Discuss this statement with reference to 'A Letter to God', supporting your answer with two incidents from the story.",
+                  "wordTarget": { "min": 120, "max": 150 }
+                }
+              ]
+            },
+            {
+              "key": "B",
+              "label": "Theme",
+              "stimulus": null,
+              "items": [
+                {
+                  "id": "q9b",
+                  "type": "long",
+                  "prompt": "'The Diary of a Young Girl' is a record of adolescence as much as it is a record of war. Discuss, referring to at least two entries from the text.",
+                  "wordTarget": { "min": 120, "max": 150 }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "q10",
+          "number": "10",
+          "title": "Attempt any one of the following in 100–120 words.",
+          "instruction": null,
+          "marks": 8,
+          "layout": "stack",
+          "attemptLimit": null,
+          "exportGroup": null,
+          "stimulus": null,
+          "items": null,
+          "choices": [
+            {
+              "key": "A",
+              "label": "Poetry",
+              "stimulus": null,
+              "items": [
+                {
+                  "id": "q10a",
+                  "type": "long",
+                  "prompt": "How does the poet of 'Fire and Ice' use two opposing images to warn us about human behaviour? Support your answer with lines from the poem.",
+                  "wordTarget": { "min": 100, "max": 120 }
+                }
+              ]
+            },
+            {
+              "key": "B",
+              "label": "Prose",
+              "stimulus": null,
+              "items": [
+                {
+                  "id": "q10b",
+                  "type": "long",
+                  "prompt": "The story 'The Necklace' is a study of pride and its consequences. Discuss with reference to Matilda's choices and the ending of the story.",
+                  "wordTarget": { "min": 100, "max": 120 }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "q11",
+          "number": "11",
+          "title": "Attempt any one of the following in 80–100 words.",
+          "instruction": null,
+          "marks": 5,
+          "layout": "stack",
+          "attemptLimit": null,
+          "exportGroup": null,
+          "stimulus": null,
+          "items": null,
+          "choices": [
+            {
+              "key": "A",
+              "label": "Drama",
+              "stimulus": null,
+              "items": [
+                {
+                  "id": "q11a",
+                  "type": "long",
+                  "prompt": "In 'The Proposal', how does the quarrel over the dogs reveal the true nature of the relationship between Lomov and Natalya?",
+                  "wordTarget": { "min": 80, "max": 100 }
+                }
+              ]
+            },
+            {
+              "key": "B",
+              "label": "Value-based",
+              "stimulus": null,
+              "items": [
+                {
+                  "id": "q11b",
+                  "type": "long",
+                  "prompt": "What lesson about courage does the story of the 'Fog' or the tale of the two brothers offer? Answer with reference to one text you have studied.",
+                  "wordTarget": { "min": 80, "max": 100 }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
